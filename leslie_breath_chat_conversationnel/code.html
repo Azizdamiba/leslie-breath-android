@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121318;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#003640", "on-background": "#e3e1e9", "secondary": "#4cd7f6", "on-primary-fixed-variant": "#5516be", "surface-container-low": "#1a1b21", "tertiary-fixed-dim": "#b9c8de", "inverse-primary": "#6d3bd7", "secondary-fixed-dim": "#4cd7f6", "on-surface": "#e3e1e9", "outline-variant": "#494454", "surface-container": "#1e1f25", "on-tertiary-fixed-variant": "#39485a", "primary-container": "#a078ff", "on-tertiary-container": "#1c2b3c", "on-primary": "#3c0091", "surface-tint": "#d0bcff", "primary-fixed-dim": "#d0bcff", "error-container": "#93000a", "on-primary-container": "#340080", "inverse-on-surface": "#2f3036", "on-secondary-fixed-variant": "#004e5c", "on-tertiary": "#233143", "tertiary-container": "#8392a6", "on-secondary-container": "#00424e", "error": "#ffb4ab", "outline": "#958ea0", "on-error-container": "#ffdad6", "primary-fixed": "#e9ddff", "on-surface-variant": "#cbc3d7", "surface-variant": "#34343a", "surface": "#121318", "secondary-container": "#03b5d3", "surface-container-lowest": "#0d0e13", "on-tertiary-fixed": "#0d1c2d", "secondary-fixed": "#acedff", "background": "#121318", "primary": "#d0bcff", "inverse-surface": "#e3e1e9", "surface-bright": "#38393f", "on-secondary-fixed": "#001f26", "surface-dim": "#121318", "tertiary": "#b9c8de", "on-primary-fixed": "#23005c", "tertiary-fixed": "#d4e4fa", "on-error": "#690005", "surface-container-highest": "#34343a", "surface-container-high": "#292a2f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.25rem", "gutter": "1rem", "margin": "1.25rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg": ["30px", { lineHeight: "38px", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "display-lg-mobile": ["34px", { lineHeight: "42px", fontWeight: "800" }], "display-lg": ["44px", { lineHeight: "52px", fontWeight: "800" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "500" }], "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary/30 selection:text-secondary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="flex items-center justify-between px-margin h-6 pt-1 text-on-surface-variant font-label-sm text-label-sm select-none"><span class="tracking-wider text-on-surface font-label-md text-label-md">09:41</span><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[15px]">signal_cellular_4_bar</span><span class="font-label-sm text-label-sm font-bold tracking-tight text-secondary">5G</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[16px] text-on-surface">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACMI2OkFJVx4pWNgvxINaCX8IyMIUZkePonSFJqE96S3PwwPYJRZvhah5MiuuKYe7VAdiqXchww33TwUKsKE3FvU7HB1cbJDcpcHUQ7_G0315p2Gv4pkJQNKbnQel-iJrJND2LMyCbFnQWLuTnGg2nYoFdacTxK8oQ9NlZIJonRZ42AB2CvBDkc2fun_GaPJL5XtHzkI39SzPAGc70aFcWGl16wUiA_H8IXPAE4Wo"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface tracking-tight uppercase">LESLIE</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">BREATH</span></div><div class="flex items-center gap-1"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary shadow-[0_0_8px_#4cd7f6]"></span></span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide">AI SYNC ACTIVE</span></div></div></div><div class="flex items-center gap-space-md"><div class="hidden xs:flex flex-col items-end text-right"><span class="font-label-md text-label-md text-on-surface font-semibold">Chat</span><span class="font-label-sm text-label-sm text-on-surface-variant">Abdoul Aziz Damiba</span></div><div class="relative flex items-center justify-center p-0.5 rounded-full bg-surface-container-high ring-1 ring-secondary/40 shadow-[0_0_12px_rgba(76,215,246,0.25)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdIDXkM-Drf7q0RzBptkJO-0bnp9rjQ3_kdf5fy2YP2lUbni_6HhGnJXJV-DkWQf3Sp530tbWBTlIrVsB5OfjF-YkegUiybaLvHLhwnnqH3_NidURaGsAVqhuygmCoFibPQ_gD81L4h8ahXSCGcpLvmP5C-tfgsht9GbC2sP1diqMso0yGK0KHoYkg3JCb3thlAcyqwI2bJr-PnMX1yo8D-5k3-nlOgfUWlB_rQGM"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface shadow-[0_0_6px_#4cd7f6]"></span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-6 gap-space-lg select-none">
+<!-- Dynamic Atmospheric Glow Background Layers -->
+<div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary-container/15 rounded-full blur-[90px]"></div>
+<div class="absolute top-1/3 -right-20 w-80 h-80 bg-secondary/10 rounded-full blur-[80px]"></div>
+<div class="absolute bottom-24 -left-20 w-80 h-80 bg-inverse-primary/10 rounded-full blur-[80px]"></div>
+</div>
+<!-- Model Selector & Creator Attribution Pill -->
+<div class="flex flex-col gap-space-xs mt-2">
+<div class="flex items-center justify-between">
+<!-- Interactive Model Trigger -->
+<div class="flex items-center gap-space-sm bg-surface-container-high/90 hover:bg-surface-bright backdrop-blur-xl px-space-md py-1.5 rounded-full shadow-md cursor-pointer transition-all active:scale-95 group" id="modelDropdownToggle">
+<div class="relative flex items-center justify-center w-5 h-5">
+<span class="absolute inset-0 rounded-full bg-secondary/30 animate-ping"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_10px_#4cd7f6]"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-label-md text-on-surface flex items-center gap-1">
+<span id="currentModelLabel">Leslie v4.5 Neural Pulse</span>
+<span class="material-symbols-outlined text-label-md text-secondary transition-transform group-hover:translate-y-0.5">expand_more</span>
+</span>
+</div>
+</div>
+<!-- Creator System Tag -->
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/80 px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">terminal</span>
+<span class="font-label-sm text-label-sm tracking-tight text-on-surface-variant/80 uppercase">
+          Dev by <strong class="text-primary font-bold">ABDOUL AZIZ DAMIBA</strong>
+</span>
+</div>
+</div>
+<!-- Hidden Model Selection Sheet (Toggleable via micro-interaction) -->
+<div class="hidden flex flex-col gap-1.5 bg-surface-container/95 backdrop-blur-2xl p-space-sm rounded-xl shadow-xl" id="modelSheet">
+<button class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high text-left hover:bg-surface-bright transition-all" onclick="switchModel('Leslie v4.5 Neural Pulse', 'Mode Cognitif Ultra-Dense')">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface">Leslie v4.5 Neural Pulse</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Latence 18ms • Flux cognitif multimodal</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</button>
+<button class="flex items-center justify-between p-2 rounded-lg bg-transparent text-left hover:bg-surface-container-high transition-all" onclick="switchModel('Vision Turbo v2', 'Analyse Visuelle Instantanée')">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">neurology</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface">Vision Turbo v2</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">OCR cybernétique &amp; inspection de code UI</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">radio_button_unchecked</span>
+</button>
+<button class="flex items-center justify-between p-2 rounded-lg bg-transparent text-left hover:bg-surface-container-high transition-all" onclick="switchModel('DeepReasoning Quantum', 'Calcul Matriciel Complexe')">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">memory</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface">DeepReasoning Quantum</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Arbre de pensée mathématique &amp; synthèses</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+<!-- Main Conversation Stream -->
+<div class="flex flex-col gap-space-lg" id="chatStream">
+<!-- Timestamp Divider -->
+<div class="flex items-center justify-center gap-3">
+<div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/70 px-2 py-0.5 rounded-full bg-surface-container-lowest">
+        Session Éveillée • Leslie Core Synced
+      </span>
+<div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+</div>
+<!-- AI Greeting Message -->
+<div class="flex flex-col items-start gap-space-xs max-w-[92%]">
+<div class="flex items-center gap-2">
+<div class="relative w-7 h-7 rounded-full bg-gradient-to-tr from-inverse-primary via-primary-container to-secondary flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.3)]">
+<span class="material-symbols-outlined text-[15px] text-surface font-bold">electric_bolt</span>
+</div>
+<span class="font-title-md text-label-lg text-secondary font-bold tracking-tight">LESLIE BREATH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">09:41</span>
+</div>
+<!-- AI Obsidian Glass Card -->
+<div class="bg-surface-container-low/90 backdrop-blur-2xl p-space-md rounded-2xl rounded-tl-sm text-on-surface shadow-lg flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -top-12 -left-12 w-28 h-28 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Salutations Abdoul Aziz. Les vecteurs neuronaux de <span class="text-secondary font-semibold">Leslie Breath</span> sont calibrés à 100%. L'interface haptique et l'analyse visuelle temps réel sont prêtes pour vos requêtes.
+        </p>
+<!-- Inline Visual Hologram Card -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<img class="w-full h-36 object-cover opacity-90 hover:scale-105 transition-transform duration-700" data-alt="Futuristic luminous obsidian star emblem emitting vibrant neon cyan and electric violet energy waves in deep dark cyberpunk void with soft atmospheric volumetric smoke and luxury reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2MsjpLBux1Q_E7N0_GAFrxDLy9uHu5L_QR93g1tEZ7kOZ6STtBFNIwntITfNwmfq_V0FbLPUVfykyjzPf7tmv0pLJJhcY8QzlKOpv8Hg92z6h0ux8T6AqSmVqBAKbq-LdrgjRzLXWhpUdU_YJvImEWIkFLhZ7Cggot0qlqAlFb5LC91oI1NK9bJrk7sBKK84kwlfB_0SW1Y-Y13DTHXUdWhTuSK3t9Yser0fOVZY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent flex items-end p-2.5">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">flare</span>
+                HARMONIE BIOMÉTRIQUE : 98.4%
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Latence : 14ms</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Que souhaitez-vous explorer aujourd'hui ?
+        </p>
+</div>
+</div>
+<!-- User Interaction Message -->
+<div class="flex flex-col items-end gap-space-xs max-w-[88%] self-end">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">09:42</span>
+<span class="font-title-md text-label-lg text-primary font-bold">Vous</span>
+</div>
+<!-- User Electric Violet Bubble -->
+<div class="bg-gradient-to-br from-inverse-primary/95 to-primary-container/85 backdrop-blur-2xl text-on-surface p-space-md rounded-2xl rounded-tr-sm shadow-[0_4px_24px_rgba(109,59,215,0.35)]">
+<p class="font-body-md text-body-md text-white font-medium leading-relaxed">
+          Génère le composant d'onde bio-respiratoire avec calcul cinétique en Tailwind CSS et architecture modulaire.
+        </p>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">done_all</span>
+<span>Reçu • Synthèse complétée</span>
+</div>
+</div>
+<!-- AI Rich Code & Analysis Response -->
+<div class="flex flex-col items-start gap-space-xs max-w-[94%]">
+<div class="flex items-center gap-2">
+<div class="relative w-7 h-7 rounded-full bg-gradient-to-tr from-inverse-primary to-secondary flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.3)]">
+<span class="material-symbols-outlined text-[15px] text-surface font-bold">auto_awesome</span>
+</div>
+<span class="font-title-md text-label-lg text-secondary font-bold tracking-tight">LESLIE BREATH</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">09:42</span>
+</div>
+<div class="bg-surface-container-low/95 backdrop-blur-2xl p-space-md rounded-2xl rounded-tl-sm text-on-surface shadow-xl flex flex-col gap-space-md w-full relative">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Voici le micro-contrôleur tactile pour l'harmoniseur <strong class="text-secondary font-semibold">Pulse Wave</strong>. Il intègre une fréquence adaptative calée sur les cycles diaphragmatiques :
+        </p>
+<!-- Neon Syntax Highlighted Code Block -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<!-- Code Header Bar -->
+<div class="flex items-center justify-between px-space-md py-2 bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error/80"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary/80"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary/80"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-mono">BreathHarmonizer.tsx</span>
+</div>
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors cursor-pointer active:scale-95" onclick="navigator.clipboard.writeText('export const PulseWave = () =&gt; ...'); this.innerText='Copié !'; setTimeout(() =&gt; this.innerText='Copier', 1800);">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span>Copier</span>
+</button>
+</div>
+<!-- Code Content Area -->
+<pre class="p-space-md text-label-sm font-mono overflow-x-auto text-on-surface leading-5 bg-surface-container-lowest"><span class="text-primary">const</span> <span class="text-secondary font-bold">LeslieBreathOrb</span> = ({ <span class="text-tertiary">frequency</span> = <span class="text-secondary-fixed">0.25</span> }) =&gt; {
+  <span class="text-primary">const</span> [expand, setExpand] = <span class="text-primary-container">useState</span>(<span class="text-secondary">true</span>);
+
+  <span class="text-outline-variant">// Phase 1: Inhalation Violette (4.0s)</span>
+  <span class="text-outline-variant">// Phase 2: Exhalation Cyan (4.0s)</span>
+  <span class="text-primary">return</span> (
+    &lt;<span class="text-secondary">div</span> <span class="text-primary-fixed-dim">className</span>=<span class="text-tertiary-fixed">"relative flex items-center justify-center p-8"</span>&gt;
+      &lt;<span class="text-secondary">div</span> <span class="text-primary-fixed-dim">className</span>=<span class="text-tertiary-fixed">"w-24 h-24 rounded-full bg-gradient-to-tr from-inverse-primary to-secondary shadow-[0_0_30px_#4cd7f6] animate-pulse"</span> /&gt;
+    &lt;/<span class="text-secondary">div</span>&gt;
+  );
+};</pre>
+</div>
+<!-- Interactive AI Feedback & Action Strip -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-secondary transition-all active:scale-95" title="Utile">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-error transition-all active:scale-95" title="À reformuler">
+<span class="material-symbols-outlined text-[16px]">thumb_down</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-primary transition-all active:scale-95" title="Régénérer">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 font-mono">
+            Token sync: 512 • Modèle: v4.5 Pulse
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Context Prompt Suggestion Pills (Horizontally Scrollable) -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/80 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">tips_and_updates</span>
+        Suggestions intelligentes
+      </span>
+<span class="font-label-sm text-label-sm text-secondary cursor-pointer hover:underline">Voir tout</span>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto pb-1 scrollbar-none">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface text-label-md font-label-md whitespace-nowrap shadow-sm hover:shadow-[0_0_12px_rgba(76,215,246,0.2)] transition-all active:scale-95" onclick="injectPrompt('Générer un concept cyberpunk haute couture avec reflets néon')">
+<span class="material-symbols-outlined text-secondary text-[16px]">auto_awesome</span>
+<span>Générer un concept cyberpunk</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface text-label-md font-label-md whitespace-nowrap shadow-sm hover:shadow-[0_0_12px_rgba(160,120,255,0.2)] transition-all active:scale-95" onclick="injectPrompt('Analyser ce screenshot d\'interface et auditer le contraste')">
+<span class="material-symbols-outlined text-primary text-[16px]">image_search</span>
+<span>Analyser ce screenshot</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface text-label-md font-label-md whitespace-nowrap shadow-sm hover:shadow-[0_0_12px_rgba(76,215,246,0.2)] transition-all active:scale-95" onclick="injectPrompt('Optimiser ma routine respiratoire pour un état de focus profond')">
+<span class="material-symbols-outlined text-secondary text-[16px]">self_improvement</span>
+<span>Optimiser ma routine breath</span>
+</button>
+</div>
+</div>
+<!-- Real-time Android Chat Input Console -->
+<div class="sticky bottom-2 z-30 flex flex-col gap-2 pt-2">
+<!-- Voice Wave Activity Indicator Bar (Shown on Breath Mic mode) -->
+<div class="hidden flex items-center justify-between px-space-md py-2 rounded-xl bg-surface-container-highest/90 backdrop-blur-xl shadow-lg" id="voiceWaveBar">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Mode Écoute Leslie Breath</span>
+</div>
+<div class="flex items-center gap-1 h-4">
+<span class="w-1 bg-secondary rounded-full h-2 animate-bounce"></span>
+<span class="w-1 bg-primary rounded-full h-4 animate-bounce [animation-delay:0.15s]"></span>
+<span class="w-1 bg-secondary rounded-full h-3 animate-bounce [animation-delay:0.3s]"></span>
+<span class="w-1 bg-primary rounded-full h-4 animate-bounce [animation-delay:0.45s]"></span>
+<span class="w-1 bg-secondary rounded-full h-1 animate-bounce [animation-delay:0.2s]"></span>
+</div>
+<button class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-on-surface" onclick="toggleVoiceMode(false)">close</button>
+</div>
+<!-- Main Input Bar Capsule -->
+<div class="flex items-center gap-space-xs bg-surface-container-low/95 backdrop-blur-2xl p-1.5 pl-3 rounded-full shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+<!-- Attachment / Vision Trigger -->
+<button class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant hover:text-secondary hover:bg-surface-bright transition-all active:scale-90" title="Vision Studio Upload">
+<span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+</button>
+<!-- Breath Audio Microphone Trigger -->
+<button class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary hover:bg-surface-bright transition-all active:scale-90" onclick="toggleVoiceMode(true)" title="Vocal Breath Mode">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<!-- Text Input Field -->
+<input class="flex-1 bg-transparent border-0 outline-none px-2 text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant/50 min-w-0" id="chatTextInput" onkeydown="if(event.key === 'Enter') handleSend();" placeholder="Posez votre question à Leslie..." type="text"/>
+<!-- Dynamic Send Action Button -->
+<button class="flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-tr from-inverse-primary via-primary-container to-secondary text-surface shadow-[0_0_16px_rgba(76,215,246,0.4)] transition-all hover:scale-105 active:scale-90" id="sendBtn" onclick="handleSend()">
+<span class="material-symbols-outlined text-[20px] text-on-primary font-bold">arrow_upward</span>
+</button>
+</div>
+<!-- Live System Safety & Encryption Subtext -->
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[12px] text-secondary">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60 tracking-tight">
+        Chiffrement neuronal quantum de bout en bout • Leslie Breath AI
+      </span>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction handlers for conversational console
+  const toggleBtn = document.getElementById('modelDropdownToggle');
+  const modelSheet = document.getElementById('modelSheet');
+  const modelLabel = document.getElementById('currentModelLabel');
+  const chatInput = document.getElementById('chatTextInput');
+  const chatStream = document.getElementById('chatStream');
+  const voiceBar = document.getElementById('voiceWaveBar');
+
+  if (toggleBtn && modelSheet) {
+    toggleBtn.addEventListener('click', () => {
+      modelSheet.classList.toggle('hidden');
+    });
+  }
+
+  function switchModel(name, desc) {
+    if (modelLabel) modelLabel.innerText = name;
+    if (modelSheet) modelSheet.classList.add('hidden');
+  }
+
+  function injectPrompt(text) {
+    if (chatInput) {
+      chatInput.value = text;
+      chatInput.focus();
+    }
+  }
+
+  function toggleVoiceMode(active) {
+    if (!voiceBar) return;
+    if (active) {
+      voiceBar.classList.remove('hidden');
+    } else {
+      voiceBar.classList.add('hidden');
+    }
+  }
+
+  function handleSend() {
+    if (!chatInput) return;
+    const value = chatInput.value.trim();
+    if (!value) return;
+
+    // Append new User message card to stream
+    const userMsg = document.createElement('div');
+    userMsg.className = 'flex flex-col items-end gap-space-xs max-w-[88%] self-end animate-fade-in';
+    userMsg.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-on-surface-variant">À l'instant</span>
+        <span class="font-title-md text-label-lg text-primary font-bold">Vous</span>
+      </div>
+      <div class="bg-gradient-to-br from-inverse-primary to-primary-container text-on-surface p-space-md rounded-2xl rounded-tr-sm shadow-[0_4px_20px_rgba(109,59,215,0.35)]">
+        <p class="font-body-md text-body-md text-white leading-relaxed">${escapeHtml(value)}</p>
+      </div>
+      <div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+        <span class="material-symbols-outlined text-[14px] text-secondary">done</span>
+        <span>Transmis au noyau</span>
+      </div>
+    `;
+    chatStream.appendChild(userMsg);
+    chatInput.value = '';
+
+    // Scroll to new element smoothly
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+
+    // Simulate conversational cognitive pulse reply from Leslie Breath
+    setTimeout(() => {
+      const aiReply = document.createElement('div');
+      aiReply.className = 'flex flex-col items-start gap-space-xs max-w-[94%] animate-fade-in';
+      aiReply.innerHTML = `
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-full bg-gradient-to-tr from-inverse-primary to-secondary flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.3)]">
+            <span class="material-symbols-outlined text-[15px] text-surface font-bold">bubble_chart</span>
+          </div>
+          <span class="font-title-md text-label-lg text-secondary font-bold tracking-tight">LESLIE BREATH</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">À l'instant</span>
+        </div>
+        <div class="bg-surface-container-low/95 backdrop-blur-2xl p-space-md rounded-2xl rounded-tl-sm text-on-surface shadow-xl flex flex-col gap-2">
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Reçu et synthétisé. L'onde cognitive a intégré votre instruction : <span class="text-secondary font-medium">"${escapeHtml(value)}"</span>. Analyse multi-sources terminée avec un coefficient de précision de 99.1%.
+          </p>
+          <div class="flex items-center gap-2 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-[14px] text-secondary">memory</span>
+            <span>Généré via Leslie Neural Pulse &bull; 0.08s</span>
+          </div>
+        </div>
+      `;
+      chatStream.appendChild(aiReply);
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 700);
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+</script></main><div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none"><a class="pointer-events-auto flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-inverse-primary via-primary-container to-secondary text-surface shadow-[0_0_24px_rgba(160,120,255,0.45)] transition-all duration-300 hover:scale-105 active:scale-95 ring-2 ring-secondary/40" data-path="breath-pulse" href="#"><span class="material-symbols-outlined text-[28px] text-on-primary animate-pulse">graphic_eq</span></a></div><nav class="fixed bottom-0 w-full z-40 pb-safe bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-secondary font-title-md drop-shadow-[0_0_8px_rgba(76,215,246,0.6)]"><div class="flex items-center justify-between h-20 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] transition-all text-secondary font-title-md drop-shadow-[0_0_8px_rgba(76,215,246,0.6)]" data-path="chat" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span><span class="font-label-sm text-label-sm tracking-tight">Chat</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="vision-studio" href="#"><span class="material-symbols-outlined text-[22px]">neurology</span><span class="font-label-sm text-label-sm tracking-tight">Vision</span></a><div class="w-14 flex items-center justify-center"><span class="font-label-sm text-label-sm text-on-surface-variant/60 font-semibold tracking-tighter uppercase mt-6">Pulse</span></div><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="outils-hub" href="#"><span class="material-symbols-outlined text-[22px]">hub</span><span class="font-label-sm text-label-sm tracking-tight">Hub</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="memoire-profil" href="#"><span class="material-symbols-outlined text-[22px]">fingerprint</span><span class="font-label-sm text-label-sm tracking-tight">Profil</span></a></div></nav></body></html>
